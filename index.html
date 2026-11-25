@@ -5,13 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sohila Mustafa · Junior DevOps Engineer</title>
 <meta name="description" content="Junior DevOps Engineer building cloud-native platforms on AWS EKS with Terraform, Kubernetes, Helm, ArgoCD GitOps and GitHub Actions.">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sohila Mustafa · Junior DevOps Engineer">
-<meta property="og:description" content="Junior DevOps Engineer building cloud-native platforms on AWS EKS with Terraform, Kubernetes, Helm, ArgoCD GitOps and GitHub Actions.">
-<meta property="og:url" content="https://seela-2001.github.io/my-new-portfolio/">
-<meta property="og:image" content="https://seela-2001.github.io/my-new-portfolio/preview.png">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Hanken+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -73,7 +66,8 @@ h1 span{display:block;font-style:italic;color:var(--violet);padding-left:.5em}
 .soc{display:flex;gap:22px;font:500 .85rem var(--mono)}
 .soc a{text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px}.soc a:hover{border-color:var(--violet);color:var(--violet)}
 .stage{position:relative;min-height:560px}
-.arch{position:absolute;right:0;top:0;width:78%;aspect-ratio:3/4;border-radius:999px 999px 28px 28px;background:linear-gradient(160deg,#172B4D,#202735);display:grid;place-items:center;overflow:hidden}
+.arch{position:absolute;right:0;top:0;width:78%;aspect-ratio:3/4;border-radius:999px 999px 28px 28px;background:linear-gradient(160deg,#172B4D,#202735);border:5px solid var(--blush);display:grid;place-items:center;overflow:hidden}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;z-index:1}
 .arch::after{content:"";position:absolute;width:140%;height:50%;bottom:-20%;left:-20%;background:radial-gradient(closest-side,rgba(245,230,160,.45),transparent)}
 .arch span{font:italic 400 clamp(5rem,12vw,9rem) var(--serif);color:var(--blush);letter-spacing:-.05em;z-index:1}
 .orb{position:absolute;left:2%;top:10%;width:92px;height:92px;border-radius:50%;background:var(--blush);display:grid;place-items:center;font:500 .66rem var(--mono);text-align:center;text-transform:uppercase;letter-spacing:.08em;color:var(--royal);animation:float 6s ease-in-out infinite;z-index:2;line-height:1.3}
@@ -212,12 +206,12 @@ footer{background:var(--deep);color:rgba(248,241,223,.65);text-align:center;font
 <p class="lead rv">I build cloud-native platforms on AWS EKS with Terraform, Helm, ArgoCD GitOps and GitHub Actions, and I like to understand the application I deploy.</p>
 <div class="btns rv">
 <a class="btn p" href="#projects">View My Projects <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
-<a class="btn g" href="https://sohila-mustafa.vercel.app/Sohila Mustafa-DevOps Engineer.pdf">Download My CV</a>
+<a class="btn g" href="https://sohila-mustafa.vercel.app/Sohila_Mustafa_DevOps-Engineer.pdf">Download My CV</a>
 </div>
 <div class="soc rv"><a href="https://github.com/seela-2001">GitHub ↗</a><a href="https://www.linkedin.com/in/sohila-mustafa/">LinkedIn ↗</a></div>
 </div>
 <div class="stage rv" aria-label="Portrait of Sohila Mustafa with deployment pipeline">
-<div class="arch" role="img" aria-label="Portrait placeholder, monogram SM"><span>SM</span></div>
+<div class="arch"><img src="profile.png" alt="Portrait of Sohila Mustafa" width="1254" height="1254"></div>
 <div class="orb">Cairo<br>Egypt</div>
 <div class="pipe"><h3>From commit to cluster</h3>
 <ol id="pipe"><li>Git push to main</li><li>GitHub Actions builds and pushes the image</li><li>ArgoCD Image Updater detects the new tag</li><li>ArgoCD syncs Helm release to EKS</li><li>Prometheus and Grafana watch the result</li></ol></div>
